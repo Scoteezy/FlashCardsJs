@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JapaneseWordCards</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <button type="button" data-start class="btn btn-info">Start</button>
+    <div class="quote">
+    </div>
+    <button type="button" data-flip class="btn btn-info">Flip</button>
+    <div class="btn__container">
+        <button type="button" data-dk class="btn btn-info">Don't know</button>
+        <button type="button" data-remainig class="btn btn-info ">Remainig cards</button>
+        <button type="button" data-k class="btn btn-info">Know</button>
+    
+    </div>
+    <div class="btn__container">
+        <button type="button" data-retry class="btn btn-info">retry</button>
+        <!-- <button type="button" data-shuffle class="btn btn-info">shuffle</button> -->
+        <button type="button" data-restart class="btn btn-info">restart</button>
+    
+    </div>
+</div>
+<div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Last attemp you:</div>
+                    <p class="learned">Learned </p>
+                    <p class="dlearned">Didn't learnded </p>
+                    <p class="best__result">Best result is: learned words </p>
+                    <button data-btntry class="btn btn_dark btn_min">Try again</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
